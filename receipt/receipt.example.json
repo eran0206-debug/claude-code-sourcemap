@@ -1,0 +1,44 @@
+{
+  "business": {
+    "name": "שם העסק",
+    "address": "רחוב ומספר, עיר",
+    "business_id": "000000000",
+    "phone": "050-0000000",
+    "email": "you@example.com",
+    "instagram": "@your_handle",
+    "brand": "YOUR. BRAND",
+    "logo": "assets/logo.png",
+    "contact_phone": "050-0000000"
+  },
+  "fonts": {
+    "family": "Arimo",
+    "regular": "assets/Arimo-Regular.ttf",
+    "bold": "assets/Arimo-Bold.ttf"
+  },
+  "receipt": {
+    "number": "0000",
+    "date": "1.1.2026",
+    "client": "שם הלקוח",
+    "client_id": "000000000",
+    "currency": "₪",
+    "items": [
+      {
+        "title": "שם הפרויקט — תיאור קצר",
+        "subtitle": "פירוט השירות | 1.1.2026",
+        "qty": "1",
+        "amount": "1,000"
+      }
+    ],
+    "total": "1,000",
+    "total_label": "סה״כ שולם",
+    "paid": true,
+    "paid_label": "✓ שולם",
+    "note_title": "תודה על שיתוף הפעולה",
+    "note_body": "פסקת תודה קצרה ללקוח, שתיים עד שלוש שורות.",
+    "signature": "— שם מלא | YOUR. BRAND"
+  },
+  "scan": {
+    "title": "– מקור הקבלה החתומה –",
+    "image": "assets/scan.jpg"
+  }
+}

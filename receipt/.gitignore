@@ -1,0 +1,6 @@
+# Real receipt data and assets stay local — they carry client tax IDs,
+# personal contact details and a scanned signature.
+assets/
+receipt.json
+*.pdf
+*.html

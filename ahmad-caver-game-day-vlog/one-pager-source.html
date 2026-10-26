@@ -1,104 +1,127 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
-<title>Game Day — Production Brief for Ahmad Caver</title>
+<title>Ahmad Caver — Game Day Vlog</title>
 <style>
   @page { size: A4; margin: 0; }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
-  body { width: 210mm; height: 297mm; font-family: "Inter", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif; color: #15161a; background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; font-size: 9.6pt; line-height: 1.35; }
-  .page { width: 210mm; height: 297mm; padding: 0 0 8mm 0; overflow: hidden; display: flex; flex-direction: column; }
-  .band { background: #0f1115; color: #fff; padding: 9mm 14mm 7mm 14mm; }
-  .band .kicker { font-size: 8pt; letter-spacing: .22em; text-transform: uppercase; color: #c9cbd1; display: flex; justify-content: space-between; }
-  .band h1 { margin: 2.5mm 0 1.2mm 0; font-size: 24pt; letter-spacing: .02em; font-weight: 800; line-height: 1; }
-  .band h1 span { color: #e0a93c; }
-  .band .sub { font-size: 9pt; color: #c9cbd1; }
-  .main { padding: 5.5mm 14mm 0 14mm; flex: 1; display: flex; flex-direction: column; gap: 4mm; overflow: hidden; }
-  .rule { font-size: 14pt; font-weight: 800; line-height: 1.2; letter-spacing: -.01em; }
+  body { width: 210mm; height: 297mm; font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #15161a; background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; font-size: 8.9pt; line-height: 1.32; }
+  .page { width: 210mm; height: 297mm; padding: 0 0 7mm 0; display: flex; flex-direction: column; overflow: hidden; }
+  .band { background: #0f1115; color: #fff; padding: 8mm 13mm 6.5mm 13mm; }
+  .kicker { font-size: 7.6pt; letter-spacing: .22em; text-transform: uppercase; color: #c9cbd1; display: flex; justify-content: space-between; }
+  h1 { margin: 2.2mm 0 1mm 0; font-size: 21pt; letter-spacing: .02em; font-weight: 800; line-height: 1; }
+  h1 span { color: #e0a93c; }
+  .main { padding: 5mm 13mm 0 13mm; flex: 1; display: flex; flex-direction: column; gap: 3.6mm; }
+  .top { display: grid; grid-template-columns: 1.25fr 1fr; gap: 7mm; }
+  h2 { font-size: 7.4pt; letter-spacing: .2em; text-transform: uppercase; color: #8a8e98; margin: 0 0 1.2mm 0; font-weight: 700; }
+  h3 { font-size: 9.4pt; margin: 0 0 1mm 0; font-weight: 800; }
+  h3 span { color: #b7811c; margin-right: 1.5mm; }
+  p { margin: 0; }
+  .feel { font-weight: 700; }
+  .rule { font-size: 12.5pt; font-weight: 800; line-height: 1.25; }
   .rule em { font-style: normal; color: #b7811c; }
-  .lead { margin-top: 1.5mm; font-size: 9.6pt; color: #3a3d45; }
-  h2 { font-size: 7.8pt; letter-spacing: .2em; text-transform: uppercase; color: #8a8e98; margin: 0 0 2mm 0; font-weight: 700; }
-  table { width: 100%; border-collapse: collapse; }
-  td { vertical-align: top; padding: 1.3mm 2mm 1.3mm 0; border-top: 1px solid #e4e6ea; font-size: 9pt; }
-  tr:first-child td { border-top: 0; }
-  td.n { width: 7mm; font-weight: 800; color: #b7811c; font-size: 10pt; padding-right: 1mm; }
-  td.b { width: 26mm; font-weight: 700; }
-  td.s { width: 50%; color: #2a2d34; }
-  td.y { color: #3a3d45; }
-  .cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5mm; }
-  .cols p, .cols li { margin: 0; font-size: 9pt; color: #2a2d34; }
-  .cols ul { margin: 0; padding-left: 3.5mm; }
-  .cols li { margin-bottom: 0.9mm; }
-  .cols b { color: #15161a; }
-  .deliv { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; }
-  .deliv > div { border: 1px solid #e4e6ea; border-radius: 2mm; padding: 2mm 3mm; }
-  .deliv .t { font-weight: 800; font-size: 9.5pt; }
-  .deliv .d { color: #5a5e68; font-size: 8.3pt; margin-top: .6mm; }
-  .approve { margin-top: auto; background: #f4f5f7; border-radius: 2.5mm; padding: 3.2mm 5mm; display: flex; align-items: center; gap: 5mm; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.2mm 7mm; }
+  .sec { border-top: 1px solid #e4e6ea; padding-top: 2.2mm; }
+  .lbl { font-weight: 700; color: #15161a; }
+  .cap { color: #2a2d34; }
+  .cap b { font-weight: 700; color: #15161a; }
+  ul { margin: .6mm 0 0 0; padding-left: 3.6mm; }
+  li { margin: 0 0 .25mm 0; color: #2a2d34; }
+  .out { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+  .out > div { border: 1px solid #e4e6ea; border-radius: 2mm; padding: 2mm 3mm; }
+  .out .t { font-weight: 800; font-size: 9.2pt; }
+  .out .d { color: #2a2d34; margin-top: .5mm; }
+  .approve { margin-top: auto; background: #f4f5f7; border-radius: 2.5mm; padding: 2.8mm 5mm; display: flex; align-items: center; gap: 5mm; }
   .approve h2 { margin: 0; color: #15161a; white-space: nowrap; }
-  .approve .boxes { display: flex; flex-wrap: wrap; gap: 2mm 6mm; font-size: 9pt; }
-  .approve .boxes span::before { content: ""; display: inline-block; width: 3.4mm; height: 3.4mm; border: 1.5px solid #15161a; border-radius: .6mm; vertical-align: -0.6mm; margin-right: 1.8mm; }
-  .approve .note { font-size: 8.3pt; color: #5a5e68; margin-left: auto; white-space: nowrap; }
-  .foot { padding: 3mm 14mm 0 14mm; display: flex; justify-content: space-between; font-size: 7.8pt; color: #8a8e98; letter-spacing: .08em; }
+  .boxes { display: flex; flex-wrap: wrap; gap: 1.5mm 6mm; font-size: 8.6pt; }
+  .boxes span::before { content: ""; display: inline-block; width: 3.2mm; height: 3.2mm; border: 1.5px solid #15161a; border-radius: .6mm; vertical-align: -0.5mm; margin-right: 1.6mm; }
+  .foot { padding: 2.6mm 13mm 0 13mm; display: flex; justify-content: space-between; font-size: 7.4pt; color: #8a8e98; letter-spacing: .08em; }
 </style></head>
 <body><div class="page">
   <div class="band">
-    <div class="kicker"><span>EA Visuals · Production brief</span><span>Game Day Vlog · Prepared for Ahmad Caver</span></div>
-    <h1>GAME <span>DAY</span></h1>
-    <div class="sub">Chapter One. The script and shoot plan for your first game-day film: one home night in Ramat Gan, 4 to 7 minutes on YouTube and a 45-second Reel. Read it, tick what works, and we lock the date.</div>
+    <div class="kicker"><span>EA Visuals</span><span>Game Day / First Chapter</span></div>
+    <h1>AHMAD CAVER — GAME DAY <span>VLOG</span></h1>
   </div>
 
   <div class="main">
-    <div>
-      <div class="rule">We're not filming a basketball game.<br>We're introducing <em>you</em> through a basketball game.</div>
-      <div class="lead">People already know you can play. This film gives them the player first, then the person, so they have a reason to follow you after the final buzzer. Natural, cinematic, personal, confident. Not a highlight tape.</div>
+    <div class="top">
+      <div>
+        <h2>Core idea</h2>
+        <p>A short cinematic game-day story that introduces Ahmad through basketball first — then lets people meet the person behind the player.</p>
+        <h2 style="margin-top:2.6mm">Feel</h2>
+        <p class="feel">Natural · Cinematic · Personal · Confident</p>
+        <p>Not over-produced. Not a generic highlight video.</p>
+      </div>
+      <div>
+        <h2>The main rule</h2>
+        <p class="rule">We’re not filming a basketball game.<br>We’re introducing <em>Ahmad Caver</em> through a basketball game.</p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="sec">
+        <h3><span>1</span>ARRIVAL / HOOK</h3>
+        <p class="cap"><b>Goal:</b> Pull the viewer into Ahmad’s day immediately.</p>
+        <p class="cap"><b>Capture:</b> Ahmad arriving at the arena · Walking toward / into the venue · Shoes / bag / headphones / details · Natural interactions · 1–2 quick lines to camera before the game</p>
+        <p class="cap"><b>Simple prompt:</b> “What’s the mindset going into tonight?”</p>
+        <p class="cap"><b>Opening style:</b> Quick cinematic shots + Ahmad’s voice over them.</p>
+      </div>
+      <div class="sec">
+        <h3><span>2</span>PRE-GAME</h3>
+        <p class="cap"><b>Goal:</b> Build anticipation.</p>
+        <p class="cap"><b>Capture:</b> Stepping onto the court · Warmups · Shooting routine · Stretching / preparation · Teammate interactions · Quiet focused moments · Close-ups + wide arena shots</p>
+        <p class="cap"><b>Story:</b> The energy slowly builds toward tip-off.</p>
+      </div>
+      <div class="sec">
+        <h3><span>3</span>THE GAME</h3>
+        <p class="cap"><b>Goal:</b> Show Ahmad as the athlete.</p>
+        <p class="cap"><b>Capture:</b> Best plays · Reactions · Defense / offense · Bench moments · Crowd / atmosphere · Scoreboard / game details · Emotional moments</p>
+        <p class="cap"><b>Edit:</b> Do not make this the entire vlog. Use the game as the peak of the story.</p>
+      </div>
+      <div class="sec">
+        <h3><span>4</span>AFTER THE GAME</h3>
+        <p class="cap"><b>Goal:</b> Transition from basketball player → person.</p>
+        <p class="cap">First, let Ahmad react naturally to the game.</p>
+        <p class="cap"><b>Questions:</b> “How did that one feel?” · “What stood out to you tonight?” · “What’s the mindset after a game like this?”</p>
+        <p class="cap">Keep answers natural and short.</p>
+      </div>
+      <div class="sec">
+        <h3><span>5</span>MEET AHMAD</h3>
+        <p class="cap"><b>Goal:</b> Give viewers a reason to follow beyond tonight.</p>
+        <p class="cap">More relaxed, off-court conversation.</p>
+        <p class="cap"><b>Topics:</b></p>
+        <ul>
+          <li>Who is Ahmad Caver?</li>
+          <li>Where is he from?</li>
+          <li>How long has basketball been part of his life?</li>
+          <li>What keeps him hungry?</li>
+          <li>What does he still enjoy about the game?</li>
+          <li>What does he enjoy outside basketball?</li>
+          <li>What side of himself does he want people to see?</li>
+          <li>What can people expect from his future content?</li>
+        </ul>
+        <p class="cap"><b>Important:</b> This should feel like a conversation — not an interview.</p>
+      </div>
+      <div class="sec">
+        <h3><span>6</span>ENDING / NEXT CHAPTER</h3>
+        <p class="cap">Finish with a short statement from Ahmad that creates continuation.</p>
+        <p class="cap"><b>Example direction:</b> “This is only the beginning. You’ll see a lot more this season.”</p>
+        <p class="cap"><b>Then:</b> Final cinematic shots · Walk away / arena exit · EA Visuals × Ahmad Caver</p>
+      </div>
     </div>
 
     <div>
-      <h2>The story in seven beats</h2>
-      <table>
-        <tr><td class="n">0</td><td class="b">Cold open</td><td class="s">Empty court, lights half down. One sentence from you about who you are. Then we jump back to the start of your day.</td><td class="y">Nothing extra. The line comes from our conversation.</td></tr>
-        <tr><td class="n">1</td><td class="b">Arrival</td><td class="s">Outside the arena and the walk in: bag, shoes, headphones, your first look at the court.</td><td class="y">Arrive as you always do. One honest answer to "What's the mindset tonight?"</td></tr>
-        <tr><td class="n">2</td><td class="b">Pre-game</td><td class="s">Warm-ups, your shooting routine, stretching, the huddle, the quiet minute before tip-off.</td><td class="y">Tell us two or three real rituals so we're in place when they happen.</td></tr>
-        <tr><td class="n">3</td><td class="b">The game</td><td class="s">Your best plays, defense, reactions, the crowd. One signature moment slowed down with the sound pulled out.</td><td class="y">Play. Forget we're there.</td></tr>
-        <tr><td class="n">4</td><td class="b">After the game</td><td class="s">Your first raw reaction on the court, minutes after the buzzer. Sweat still on.</td><td class="y">Three short answers. No repeats, no script.</td></tr>
-        <tr><td class="n">5</td><td class="b">Meet Ahmad</td><td class="s">Somewhere that's yours: the car ride home, a late-night spot in Ramat Gan, your place. A relaxed talk, not an interview.</td><td class="y">30 to 40 minutes with us. Topics in advance, never the lines.</td></tr>
-        <tr><td class="n">6</td><td class="b">Next chapter</td><td class="s">Your closing line, the arena emptying, the walk away. Card: Chapter One. EA Visuals × Ahmad Caver.</td><td class="y">One sentence that promises more. In your words.</td></tr>
-      </table>
-    </div>
-
-    <div class="cols">
-      <div><h2>Three promises</h2><ul>
-        <li><b>Your voice only.</b> No narrator, no studio interview. Your words carry the whole film.</li>
-        <li><b>Nothing staged.</b> We follow your real routine. We never ask you to repeat a moment.</li>
-        <li><b>The game is the peak, not the point.</b> About 90 seconds of a 6-minute film. The rest is you.</li>
-      </ul></div>
-      <div><h2>Your game day</h2><ul>
-        <li><b>Before:</b> one person, one camera, meets you at arrival. One question on the walk in, then invisible.</li>
-        <li><b>During:</b> nothing. We shoot from the stands.</li>
-        <li><b>After:</b> five minutes on the court, then the conversation at a place and time you choose.</li>
-      </ul></div>
-      <div><h2>Good to know</h2><ul>
-        <li><b>Wear what you'd wear anyway.</b> Your real bag, your real headphones.</li>
-        <li><b>Off limits:</b> any person or topic you name stays out.</li>
-        <li><b>You approve the final cut</b> before anything is posted. Rough cut in 7 days, final in 14.</li>
-      </ul></div>
-    </div>
-
-    <div>
-      <h2>What you get</h2>
-      <div class="deliv">
-        <div><div class="t">The film</div><div class="d">4 to 7 min · YouTube. The piece you send anyone who asks who Ahmad Caver is.</div></div>
-        <div><div class="t">The Reel</div><div class="d">30 to 60 s · Instagram, TikTok. The fast version with a strong closing line.</div></div>
-        <div><div class="t">Teaser</div><div class="d">10 to 15 s · Stories. Posted the day before the film drops.</div></div>
-        <div><div class="t">Stills</div><div class="d">8 to 10 cinematic frames for your feed, press and agents.</div></div>
+      <h2>Final outputs</h2>
+      <div class="out">
+        <div><div class="t">YouTube vlog · Target: 4–7 minutes</div><div class="d"><b>Flow:</b> Arrival → Pre-game → Warmups → Game → Post-game → Personal Intro → What’s Next</div></div>
+        <div><div class="t">Instagram Reel · Target: 30–60 seconds</div><div class="d">Fast cinematic version of the same story: Arrival → Preparation → Best Game Moments → Ahmad Personality → Strong Closing Line</div></div>
       </div>
     </div>
 
     <div class="approve">
       <h2>Approve</h2>
-      <div class="boxes"><span>Idea and feel</span><span>The story</span><span>Conversation topics</span><span>My game day</span><span>Deliverables</span></div>
-      <div class="note">Tick what works. Tell Eran what to change.</div>
+      <div class="boxes"><span>Core idea &amp; feel</span><span>The six parts</span><span>Meet Ahmad topics</span><span>Final outputs</span></div>
     </div>
   </div>
-  <div class="foot"><span>EA VISUALS</span><span>PREPARED FOR AHMAD CAVER · GAME DAY · CHAPTER ONE · 2026</span></div>
+  <div class="foot"><span>EA VISUALS</span><span>AHMAD CAVER · GAME DAY / FIRST CHAPTER</span></div>
 </div></body></html>

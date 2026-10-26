@@ -9,4 +9,4 @@ Files here are exports of that doc:
 - `02-One-Pager-doc-version.pdf` — the same text as the one-pager, exported from the doc tab
 - `03-Full-Script-Directors-Version.pdf` — beat-by-beat script, conversation guide, Reel, look rules
 - `04-Shoot-Brief-Solo.pdf` — run of show, shot list, gear and fallbacks for a solo shooter with court-only access
-- `brief-source/` — HTML, fonts (Pinyon Script, EB Garamond, both OFL) and render script; run `node render.js` inside it
+- `brief-source/` — HTML, fonts (Cormorant Garamond Italic, EB Garamond, both OFL) and render script; run `node render.js` inside it

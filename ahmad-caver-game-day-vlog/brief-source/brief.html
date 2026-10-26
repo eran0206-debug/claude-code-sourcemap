@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Game Day Vlog — Ahmad Caver | E.A. VISUALS</title>
+<style>
+@font-face { font-family:"Corm"; src:url("CormorantGaramond-Italic.ttf"); font-weight:300 700; font-style:italic; }
+@font-face { font-family:"Garamond"; src:url("EBGaramond.ttf"); font-weight:400 800; font-style:normal; }
+@font-face { font-family:"Garamond"; src:url("EBGaramond-Italic.ttf"); font-weight:400 800; font-style:italic; }
+@font-face { font-family:"Heebo"; src:url("Heebo.woff2") format("woff2"); font-weight:100 900; }
+:root {
+  --cream:#EFE7D5; --gold:#B9902D; --navy:#1F3A5E; --card:#F7F3EA;
+  --text:#33363b; --muted:#7a7468; --hair:#E3DECF; --dash:#D8D0BC;
+  --cap:"Heebo", Arial, sans-serif;
+}
+@page { size:A4; margin:17mm 0 16mm 0; }
+@page :first { margin-top:0; }
+* { box-sizing:border-box; }
+html,body { margin:0; padding:0; background:#fff; }
+body { font-family:"Garamond", Georgia, serif; font-size:13.5pt; line-height:1.5; color:var(--text); -webkit-font-smoothing:antialiased; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+p { margin:0; }
+
+/* band */
+.band { background:var(--cream); border-bottom:4.5pt solid var(--gold); text-align:center; padding:26pt 0 18pt; }
+.band img { width:240pt; height:auto; display:inline-block; }
+.band .collab { margin-top:13pt; font-family:var(--cap); font-size:9pt; font-weight:600; letter-spacing:.36em; text-transform:uppercase; color:var(--muted); }
+.band .collab .x { color:var(--gold); margin:0 6pt; }
+.band h1 { margin:6pt 0 0; font-family:"Corm", Georgia, serif; font-style:italic; font-weight:500; font-size:31pt; color:var(--navy); line-height:1.1; }
+
+.doc { padding:0 50pt; }
+
+/* details */
+.meta { margin-top:14pt; border-top:1pt solid var(--navy); border-bottom:.8pt solid var(--hair); }
+.meta .r { display:grid; grid-template-columns:110pt 1fr; padding:6pt 0; align-items:baseline; }
+.meta .r + .r { border-top:.8pt solid var(--hair); }
+.meta .k { font-family:var(--cap); font-size:8.5pt; font-weight:600; letter-spacing:.26em; text-transform:uppercase; color:var(--gold); }
+.meta .v { font-size:14.5pt; color:var(--navy); }
+
+.lbl, .kick { font-family:var(--cap); font-size:8.5pt; font-weight:600; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); }
+h2 { margin:0; font-family:"Corm", Georgia, serif; font-style:italic; font-weight:500; font-size:28pt; color:var(--navy); line-height:1.1; }
+.thin { height:.8pt; background:var(--hair); margin:5pt 0 6pt; }
+.thin::before { content:""; display:block; width:34pt; height:.8pt; background:var(--gold); }
+.section { margin-top:12pt; break-inside:avoid; }
+.feel { font-style:italic; font-size:17pt; color:var(--navy); }
+
+/* parts */
+.part { margin-top:18pt; }
+.part .kick, .part h2, .part .thin { break-after:avoid; }
+.row { break-inside:avoid; }
+.part .kick { margin-bottom:1pt; }
+.row { display:grid; grid-template-columns:112pt 1fr; gap:0 12pt; padding:5.5pt 0; border-bottom:.6pt solid var(--hair); align-items:baseline; }
+.row:last-child { border-bottom:0; }
+.row .k { font-family:var(--cap); font-size:8.3pt; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:var(--muted); padding-top:2pt; }
+.row .v.q { font-style:italic; color:var(--navy); }
+ul.dots { margin:0; padding:0; list-style:none; }
+ul.dots li { position:relative; padding-left:13pt; }
+ul.dots li::before { content:""; position:absolute; left:1pt; top:8.5pt; width:4pt; height:4pt; border-radius:50%; background:var(--gold); }
+ul.dots.cols { columns:2; column-gap:16pt; }
+ul.dots.cols li { break-inside:avoid; }
+
+/* outputs */
+.out .pair { display:grid; grid-template-columns:1fr 1fr; gap:22pt; margin-top:6pt; }
+.out .pair > div { background:var(--card); border-top:1.5pt solid var(--gold); padding:10pt 14pt 12pt; }
+.out h4 { margin:0; font-family:"Corm", Georgia, serif; font-style:italic; font-weight:500; font-size:21pt; color:var(--navy); line-height:1.15; }
+.out .t { font-family:var(--cap); font-size:8.3pt; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); margin:3pt 0 6pt; }
+
+/* main rule */
+.mainrule { background:var(--navy); color:#E9E2D3; padding:20pt 24pt 22pt; margin-top:20pt; text-align:center; break-inside:avoid; }
+.mainrule .lbl { color:#C9B88E; }
+.mainrule .orn { width:40pt; height:.8pt; background:var(--gold); margin:9pt auto 10pt; }
+.mainrule .q { font-family:"Corm", Georgia, serif; font-style:italic; font-weight:500; font-size:22pt; line-height:1.3; color:#fff; }
+.mainrule .q b { font-weight:600; color:#D9B65A; }
+
+/* approve + foot */
+.approve { margin-top:18pt; border-top:.8pt solid var(--hair); padding-top:11pt; display:flex; align-items:center; gap:16pt; flex-wrap:wrap; break-inside:avoid; }
+.approve span.b { font-size:13pt; }
+.approve span.b::before { content:""; display:inline-block; width:9pt; height:9pt; border:1pt solid var(--navy); vertical-align:-1pt; margin-right:6pt; }
+.foot { border-top:.8pt solid var(--hair); padding:13pt 0 0; margin-top:14pt; text-align:center; break-inside:avoid; }
+.foot .name { font-family:"Corm", Georgia, serif; font-style:italic; font-weight:500; font-size:17pt; color:var(--navy); }
+.foot .contact { margin-top:2pt; font-size:11pt; color:var(--muted); }
+.foot .tag { margin-top:6pt; font-family:var(--cap); font-size:8pt; letter-spacing:.32em; text-transform:uppercase; color:var(--gold); font-weight:600; }
+.pb { break-before:page; margin-top:0 !important; }
+</style>
+</head>
+<body>
+
+<div class="band">
+  <img src="ea-visuals-logo.png" alt="E.A. VISUALS">
+  <div class="collab">E.A. Visuals<span class="x">×</span>Ahmad Caver</div>
+  <h1>Game Day Vlog — First Chapter</h1>
+</div>
+
+<div class="doc">
+
+  <div class="meta">
+    <div class="r"><div class="k">Arrival</div><div class="v">We’ll get there at 6:30 PM</div></div>
+    <div class="r"><div class="k">Where</div><div class="v">Ramat Gan · Home game</div></div>
+    <div class="r"><div class="k">Outputs</div><div class="v">YouTube vlog · Instagram Reel</div></div>
+  </div>
+
+  <div class="section">
+    <h2>Core Idea</h2>
+    <div class="thin"></div>
+    <p>A short cinematic game-day story that introduces Ahmad through basketball first — then lets people meet the person behind the player.</p>
+  </div>
+
+  <div class="section">
+    <h2>Feel</h2>
+    <div class="thin"></div>
+    <p class="feel">Natural · Cinematic · Personal · Confident</p>
+    <p>Not over-produced. Not a generic highlight video.</p>
+  </div>
+
+  <div class="part">
+    <div class="kick">Part 1</div><h2>Arrival / Hook</h2><div class="thin"></div>
+    <div class="row"><div class="k">Goal</div><div class="v">Pull the viewer into Ahmad’s day immediately.</div></div>
+    <div class="row"><div class="k">Capture</div><div class="v"><ul class="dots"><li>Ahmad arriving at the arena</li><li>Walking toward / into the venue</li><li>Shoes / bag / headphones / details</li><li>Natural interactions</li><li>1–2 quick lines to camera before the game</li></ul></div></div>
+    <div class="row"><div class="k">Simple prompt</div><div class="v q">“What’s the mindset going into tonight?”</div></div>
+    <div class="row"><div class="k">Opening style</div><div class="v">Quick cinematic shots + Ahmad’s voice over them.</div></div>
+  </div>
+
+  <div class="part">
+    <div class="kick">Part 2</div><h2>Pre-game</h2><div class="thin"></div>
+    <div class="row"><div class="k">Goal</div><div class="v">Build anticipation.</div></div>
+    <div class="row"><div class="k">Capture</div><div class="v"><ul class="dots cols"><li>Stepping onto the court</li><li>Warmups</li><li>Shooting routine</li><li>Stretching / preparation</li><li>Teammate interactions</li><li>Quiet focused moments</li><li>Close-ups + wide arena shots</li></ul></div></div>
+    <div class="row"><div class="k">Story</div><div class="v">The energy slowly builds toward tip-off.</div></div>
+  </div>
+
+  <div class="part">
+    <div class="kick">Part 3</div><h2>The Game</h2><div class="thin"></div>
+    <div class="row"><div class="k">Goal</div><div class="v">Show Ahmad as the athlete.</div></div>
+    <div class="row"><div class="k">Capture</div><div class="v"><ul class="dots cols"><li>Best plays</li><li>Reactions</li><li>Defense / offense</li><li>Bench moments</li><li>Crowd / atmosphere</li><li>Scoreboard / game details</li><li>Emotional moments</li></ul></div></div>
+    <div class="row"><div class="k">Edit</div><div class="v">Do not make this the entire vlog. Use the game as the peak of the story.</div></div>
+  </div>
+
+  <div class="part">
+    <div class="kick">Part 4</div><h2>After the Game</h2><div class="thin"></div>
+    <div class="row"><div class="k">Goal</div><div class="v">Transition from basketball player → person.<br>First, let Ahmad react naturally to the game.</div></div>
+    <div class="row"><div class="k">Questions</div><div class="v q"><ul class="dots"><li>“How did that one feel?”</li><li>“What stood out to you tonight?”</li><li>“What’s the mindset after a game like this?”</li></ul></div></div>
+    <div class="row"><div class="k"></div><div class="v">Keep answers natural and short.</div></div>
+  </div>
+
+  <div class="part">
+    <div class="kick">Part 5</div><h2>Meet Ahmad</h2><div class="thin"></div>
+    <div class="row"><div class="k">Goal</div><div class="v">Give viewers a reason to follow beyond tonight.<br>More relaxed, off-court conversation.</div></div>
+    <div class="row"><div class="k">Topics</div><div class="v"><ul class="dots"><li>Who is Ahmad Caver?</li><li>Where is he from?</li><li>How long has basketball been part of his life?</li><li>What keeps him hungry?</li><li>What does he still enjoy about the game?</li><li>What does he enjoy outside basketball?</li><li>What side of himself does he want people to see?</li><li>What can people expect from his future content?</li></ul></div></div>
+    <div class="row"><div class="k">Important</div><div class="v">This should feel like a conversation — not an interview.</div></div>
+  </div>
+
+  <div class="part">
+    <div class="kick">Part 6</div><h2>Ending / Next Chapter</h2><div class="thin"></div>
+    <div class="row"><div class="k"></div><div class="v">Finish with a short statement from Ahmad that creates continuation.</div></div>
+    <div class="row"><div class="k">Example direction</div><div class="v q">“This is only the beginning. You’ll see a lot more this season.”</div></div>
+    <div class="row"><div class="k">Then</div><div class="v"><ul class="dots"><li>Final cinematic shots</li><li>Walk away / arena exit</li><li>E.A. Visuals × Ahmad Caver</li></ul></div></div>
+  </div>
+
+  <div class="section out pb">
+    <h2>Final Outputs</h2>
+    <div class="thin"></div>
+    <div class="pair">
+      <div><h4>YouTube Vlog</h4><div class="t">Target: 4–7 minutes</div><p>Flow: Arrival → Pre-game → Warmups → Game → Post-game → Personal Intro → What’s Next</p></div>
+      <div><h4>Instagram Reel</h4><div class="t">Target: 30–60 seconds</div><p>Fast cinematic version of the same story:</p><p>Arrival → Preparation → Best Game Moments → Ahmad Personality → Strong Closing Line</p></div>
+    </div>
+  </div>
+
+  <div class="mainrule">
+    <div class="lbl">The Main Rule</div>
+    <div class="orn"></div>
+    <div class="q">We’re not filming a basketball game.<br>We’re introducing <b>Ahmad Caver</b> through a basketball game.</div>
+  </div>
+
+  <div class="approve">
+    <span class="lbl">Approve</span>
+    <span class="b">Idea &amp; feel</span><span class="b">The six parts</span><span class="b">Topics</span><span class="b">Outputs</span>
+  </div>
+
+  <div class="foot">
+    <div class="name">Eran Avisrur · E.A. VISUALS</div>
+    <div class="contact">eran0206@gmail.com</div>
+    <div class="tag">E.A. Visuals × Ahmad Caver</div>
+  </div>
+
+</div>
+</body>
+</html>

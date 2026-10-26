@@ -11,4 +11,5 @@ Files here are exports of that doc:
 - `03-Full-Script-Directors-Version.pdf` — beat-by-beat script, conversation guide, Reel, look rules
 - `04-EA-Visuals-Shoot-Brief.pdf` — the shoot brief in the same design, two pages: the day in order, must-have shots, gear, the conversation, fallbacks
 - `05-Shoot-Brief-Full-Detail.pdf` — the full-detail shoot brief: run of show, full shot list, gear notes, post-production plan
-- `brief-source/` — HTML, E.A. VISUALS logo, fonts (Heebo, Cormorant Garamond, EB Garamond) and render script; run `node render2.js` (short one page), `node render3.js` (shoot brief), `node render.js` (four pages) or `node render1.js` (dense one page) inside it
+- `06-The-Questions-Game-Day.pdf` — one page with just the questions to ask, in order, and his closing line
+- `brief-source/` — HTML, E.A. VISUALS logo, fonts (Heebo, Cormorant Garamond, EB Garamond) and render script; run `node render2.js` (short one page), `node render3.js` (shoot brief), `node render4.js` (questions), `node render.js` (four pages) or `node render1.js` (dense one page) inside it

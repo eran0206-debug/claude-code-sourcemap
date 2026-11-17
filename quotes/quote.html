@@ -6,7 +6,8 @@
 <style>
   @font-face { font-family: "Tel Aviv"; src: url("fonts/TelAviv-ModernistRegular.ttf") format("truetype"); font-weight: 400; }
   @font-face { font-family: "Tel Aviv"; src: url("fonts/TelAviv-ModernistBold.ttf") format("truetype"); font-weight: 700; }
-  @page { size: letter; margin: 0; }
+  @page { size: letter; margin: 30px 0 0 0; }
+  @page :first { margin: 0; }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
@@ -16,9 +17,9 @@
   }
   .header {
     background: #EEE6D5; text-align: center;
-    padding: 24px 48px 18px; border-bottom: 3px solid #BA912D;
+    padding: 26px 48px 16px; border-bottom: 3px solid #BA912D;
   }
-  .header img { width: 300px; display: block; margin: 0 auto 28px; }
+  .header img { width: 250px; display: block; margin: 0 auto 22px; }
   .header h1 { margin: 0; font-size: 17pt; color: #0D1B2A; font-weight: bold; }
   .header .sub { margin: 4px 0 0; font-size: 10pt; color: #5b6572; }
   .page { padding: 20px 48px 30px; }
@@ -30,6 +31,8 @@
     padding-bottom: 5px; border-bottom: 1px solid #e3e6ea;
   }
   h3 { font-size: 11.5pt; color: #BA912D; margin: 12px 0 4px; }
+  h2, h3 { break-after: avoid; }
+  .keep { break-inside: avoid; }
   p { margin: 0 0 8px; }
   ul { margin: 0; padding: 0 20px 0 0; }
   li { margin: 0 0 4px; }
@@ -65,7 +68,7 @@
 <body>
 
 <div class="header">
-  <img src="logo.png" alt="E.A. VISUALS">
+  <img src="logo-tight.png" alt="E.A. VISUALS">
   <h1>הצעת מחיר — צילום ועריכת סרטון סיכום אירוע</h1>
   <div class="sub">יום שישי · 4.12.2026 · <span dir="ltr">09:30–12:30</span> · בית החייל, אשדוד</div>
 </div>
@@ -89,6 +92,7 @@
   </table>
 
   <h2>היקף העבודה</h2>
+  <div class="keep">
   <h3>צילום באירוע</h3>
   <ul>
     <li>נוכחות צלם לאורך האירוע בין השעות <span dir="ltr">09:30–12:30</span>, כולל תיעוד ההתכנסות.</li>
@@ -96,6 +100,7 @@
     <li>שוטים משלימים לאורך היום — פרטים, מיתוג, חיוכים ותגובות.</li>
     <li>ציוד מקצועי מלא (מצלמה, עדשות ואודיו).</li>
   </ul>
+  </div>
 
   <h3>עריכה — סרטון סיכום תדמיתי</h3>
   <ul>
